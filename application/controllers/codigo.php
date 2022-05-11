@@ -3,7 +3,9 @@
 defined('BASEPATH') OR exit('no se permite el acceso al script');
 
 class codigo extends CI_Controller {
+ 
 
+    
     function __construct(){
         parent::__construct();
         $this->load->helper('OTRAS'); 
