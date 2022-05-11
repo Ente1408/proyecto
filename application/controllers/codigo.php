@@ -8,12 +8,12 @@ class codigo extends CI_Controller {
         parent::__construct();
         $this->load->helper('OTRAS'); 
         $this->load->helper('form');
-    }
+    } 
     function index(){
-        $this->load->library('Menu',array("inicio","controlador","suerte"));
+        $this->load->library('Menu',array("inicio","controlador","suerte","saludos"));
         $data['mi_menu'] = $this->menu->contruirMenu();
         $this->load->view('codigo/header');
-        $this->load->view('codigo/bienvenido',$data);
+        $this->load->view('codigo/bienvenido',$data );
     }
 
     function holamundo(){

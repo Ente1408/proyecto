@@ -1,12 +1,5 @@
 <body>
     <?php
-//     for($i=0;$i<4;$i++){
-//     print_r($cursos->result()[$i]);
-//     echo "<br>";
-
-// }    
-
-
 if($cursos){
     foreach($cursos->result() as $curso){
 ?>
@@ -18,6 +11,7 @@ if($cursos){
   <?php }}else{
       echo "<h1>Error en la aplicacion </h1>";
   } ?>
+ <a href="index.php/codigo/nuevo">Nuevo</a>
 <body>
     
 </body>

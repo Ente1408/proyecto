@@ -6,7 +6,9 @@ if( ! defined('BASEPATH')) exit('no se permite el acceso al script');
         public function __construct($arr){
             $this->arr_menu = $arr;
     
-        }
+        } 
+
+        
         function contruirMenu(){
             $retu_menu= "<nav><ul>";
             foreach($this->arr_menu as $opcion){
